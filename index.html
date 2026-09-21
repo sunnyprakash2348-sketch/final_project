@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>INDIGO</title>
+	<link rel="stylesheet" href="final_project.css">
+</head>
+<body>
+	<div class="app-shell">
+		<aside class="sidebar">
+			<div class="brand"><span class="brand-mark">✦</span>INDIGO</div>
+			<p class="eyebrow">Menu</p>
+			<nav class="nav" aria-label="Main navigation">
+				<a class="active" href="index.html"><span class="nav-icon">⌂</span><span>Overview</span></a>
+				<a href="lessons.html"><span class="nav-icon">▤</span><span>Lessons</span></a>
+				<a href="flashcards.html"><span class="nav-icon">◇</span><span>Flashcards</span></a>
+				<a href="practice.html"><span class="nav-icon">✓</span><span>Practice</span></a>
+				<a href="progress.html"><span class="nav-icon">◷</span><span>Progress</span></a>
+			</nav>
+			<div class="sidebar-bottom"><strong>Daily goal</strong><p>Study a little every day.</p><div class="tiny-progress"><span></span></div></div>
+		</aside>
+
+		<main class="main">
+			<header class="topbar"><div class="greeting"><h1>Good morning, Sunny</h1><p>Here is your learning plan for today.</p></div><div class="profile-actions"><button class="icon-button" aria-label="Notifications">♧</button><div class="avatar">SS</div></div></header>
+			<section class="hero-grid" aria-label="Daily learning overview">
+				<div class="hero-card"><p class="eyebrow">Next lesson</p><h2>Ordering at a French cafe</h2><p>Learn simple phrases for ordering food and drinks.</p><button class="primary-button" data-action="lesson">Start lesson <span aria-hidden="true">→</span></button></div>
+				<div class="streak-card"><div class="streak-top"><div><p class="eyebrow">Today's streak</p><h2>12 days</h2></div><span class="flame">♨</span></div><p>You have studied for 12 days in a row.</p><div class="days" aria-label="Weekly activity"><div class="day done"><span>✓</span>Mon</div><div class="day done"><span>✓</span>Tue</div><div class="day done"><span>✓</span>Wed</div><div class="day done"><span>✓</span>Thu</div><div class="day done"><span>✓</span>Fri</div><div class="day"><span>·</span>Sat</div><div class="day"><span>·</span>Sun</div></div></div>
+			</section>
+
+			<div class="section-head"><h2>Your lessons</h2><a class="text-button" href="lessons.html">View all →</a></div>
+			<section class="lesson-grid" aria-label="Lessons">
+				<article class="lesson-card"><div class="lesson-symbol">☕</div><h3>French essentials</h3><p>Unit 3 · 18 min left</p><div class="lesson-meta"><span>Progress</span><strong>72%</strong></div><div class="progress-bar"><span class="w72"></span></div></article>
+				<article class="lesson-card"><div class="lesson-symbol">✈</div><h3>Travel Spanish</h3><p>Unit 1 · 24 min left</p><div class="lesson-meta"><span>Progress</span><strong>35%</strong></div><div class="progress-bar"><span class="w35"></span></div></article>
+				<article class="lesson-card"><div class="lesson-symbol">♫</div><h3>Japanese basics</h3><p>Unit 2 · 12 min left</p><div class="lesson-meta"><span>Progress</span><strong>18%</strong></div><div class="progress-bar"><span class="w18"></span></div></article>
+			</section>
+
+			<div class="section-head"><h2>Practice</h2><span class="eyebrow no-margin">Quick tasks</span></div>
+			<section class="bottom-grid">
+				<article class="panel"><div class="panel-head"><h2>Flashcard</h2><span class="symbol-small">◇</span></div><div class="flashcard"><small>French · noun</small><h3 id="word">la lumière</h3><p id="translation">the light</p></div><div class="flash-actions"><span id="card-count" class="card-number">Card 04 of 20</span><button data-action="flip">Show answer</button><button data-action="next-card">Next →</button></div></article>
+				<article class="panel"><div class="panel-head"><h2>Quizzes</h2><a class="text-button" href="practice.html">View all</a></div><ul class="simple-list"><li><div><strong>Food and drinks</strong><span>5 questions</span></div><button data-action="quiz">Start</button></li><li><div><strong>Common verbs</strong><span>10 questions</span></div><button data-action="quiz">Start</button></li><li><div><strong>Travel phrases</strong><span>8 questions</span></div><button data-action="quiz">Start</button></li></ul></article>
+			</section>
+		</main>
+	</div>
+	<div class="toast" role="status" aria-live="polite"></div>
+	<script src="final_project.js"></script>
+</body>
+</html>
